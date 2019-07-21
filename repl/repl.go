@@ -3,7 +3,9 @@ package repl
 import (
 	"bufio"
 	"fmt"
-	"github.com/jsrhodes15/monkey/parse"
+	"github.com/jsrhodes15/mokey/lexer"
+	"github.com/jsrhodes15/monkey/evaluator"
+	"github.com/jsrhodes15/monkey/parser"
 	"github.com/jsrhodes15/monkey/token"
 	"io"
 )
@@ -30,8 +32,11 @@ func Start(in io.Reader, out io.Writer) {
 			continue
 		}
 
-		io.WriteString(out, program.String())
-		io.WriteString(out, "\n")
+		evaluated := evaluator.Eval(program)
+		if evaluated != nil {
+			io.WriteString(out, program.String())
+			io.WriteString(out, "\n")
+		}
 	}
 }
 
