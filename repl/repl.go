@@ -3,10 +3,9 @@ package repl
 import (
 	"bufio"
 	"fmt"
-	"github.com/jsrhodes15/mokey/lexer"
 	"github.com/jsrhodes15/monkey/evaluator"
+	"github.com/jsrhodes15/monkey/lexer"
 	"github.com/jsrhodes15/monkey/parser"
-	"github.com/jsrhodes15/monkey/token"
 	"io"
 )
 
