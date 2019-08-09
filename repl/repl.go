@@ -3,8 +3,8 @@ package repl
 import (
 	"bufio"
 	"fmt"
-	"github.com/jsrhodes15/monkey/parse"
-	"github.com/jsrhodes15/monkey/token"
+	"github.com/jsrhodes15/monkey/lexer"
+	"github.com/jsrhodes15/monkey/parser"
 	"io"
 )
 

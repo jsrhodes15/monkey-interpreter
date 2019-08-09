@@ -73,6 +73,7 @@ func New(l *lexer.Lexer) *Parser {
 	p.registerInfix(token.NOT_EQ, p.parseInfixExpression)
 	p.registerInfix(token.LT, p.parseInfixExpression)
 	p.registerInfix(token.GT, p.parseInfixExpression)
+
 	p.registerInfix(token.LPAREN, p.parseCallExpression)
 	// Read two tokens, so curToken and peekToken are both set
 	p.nextToken()
@@ -104,22 +105,6 @@ func (p *Parser) expectPeek(t token.TokenType) bool {
 	}
 }
 
-func (p *Parser) peekPrecedence() int {
-	if p, ok := precedences[p.peekToken.Type]; ok {
-		return p
-	}
-
-	return LOWEST
-}
-
-func (p *Parser) curPrecedence() int {
-	if p, ok := precedences[p.curToken.Type]; ok {
-		return p
-	}
-
-	return LOWEST
-}
-
 func (p *Parser) Errors() []string {
 	return p.errors
 }
@@ -147,6 +132,22 @@ func (p *Parser) ParseProgram() *ast.Program {
 	}
 
 	return program
+}
+
+func (p *Parser) peekPrecedence() int {
+	if p, ok := precedences[p.peekToken.Type]; ok {
+		return p
+	}
+
+	return LOWEST
+}
+
+func (p *Parser) curPrecedence() int {
+	if p, ok := precedences[p.curToken.Type]; ok {
+		return p
+	}
+
+	return LOWEST
 }
 
 func (p *Parser) parseStatement() ast.Statement {
