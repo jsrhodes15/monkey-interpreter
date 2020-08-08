@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"github.com/jsrhodes15/monkey/token"
+	"github.com/jsrhodes15/monkey-interpreter/token"
 	"testing"
 )
 

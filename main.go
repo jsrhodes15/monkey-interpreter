@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/jsrhodes15/monkey/repl"
+	"github.com/jsrhodes15/monkey-interpreter/repl"
 	"os"
 	"os/user"
 )

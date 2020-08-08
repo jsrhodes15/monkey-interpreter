@@ -1,8 +1,8 @@
 package evaluator
 
 import (
-	"github.com/jsrhodes15/monkey/ast"
-	"github.com/jsrhodes15/monkey/object"
+	"github.com/jsrhodes15/monkey-interpreter/ast"
+	"github.com/jsrhodes15/monkey-interpreter/object"
 )
 
 func Eval(node ast.Node) object.Object {

@@ -1,9 +1,9 @@
 package evaluator
 
 import (
-	"github.com/jsrhodes15/monkey/lexer"
-	"github.com/jsrhodes15/monkey/object"
-	"github.com/jsrhodes15/monkey/parser"
+	"github.com/jsrhodes15/monkey-interpreter/lexer"
+	"github.com/jsrhodes15/monkey-interpreter/object"
+	"github.com/jsrhodes15/monkey-interpreter/parser"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package ast
 
 import (
 	"bytes"
-	"github.com/jsrhodes15/monkey/token"
+	"github.com/jsrhodes15/monkey-interpreter/token"
 	"strings"
 )
 

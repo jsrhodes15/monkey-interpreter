@@ -8,7 +8,7 @@ Monkey programming language interpreter designed in [_Writing An Interpreter In 
 Install the Monkey interpreter using `go get`:
 
 ```sh
-$ go get -v -u github.com/jshrodes15/monkey-interpreter/...
+$ go get -v -u github.com/jshrodes15/monkey-interpreter
 ```
 
 To run REPL:

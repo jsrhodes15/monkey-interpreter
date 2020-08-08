@@ -2,9 +2,9 @@ package parser
 
 import (
 	"fmt"
-	"github.com/jsrhodes15/monkey/ast"
-	"github.com/jsrhodes15/monkey/lexer"
-	"github.com/jsrhodes15/monkey/token"
+	"github.com/jsrhodes15/monkey-interpreter/ast"
+	"github.com/jsrhodes15/monkey-interpreter/lexer"
+	"github.com/jsrhodes15/monkey-interpreter/token"
 	"strconv"
 )
 
