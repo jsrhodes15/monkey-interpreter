@@ -1,10 +1,11 @@
 package evaluator
 
 import (
+	"testing"
+
 	"github.com/jsrhodes15/monkey-interpreter/lexer"
 	"github.com/jsrhodes15/monkey-interpreter/object"
 	"github.com/jsrhodes15/monkey-interpreter/parser"
-	"testing"
 )
 
 func TestEvalIntegerExpression(t *testing.T) {
@@ -12,8 +13,10 @@ func TestEvalIntegerExpression(t *testing.T) {
 		input    string
 		expected int64
 	}{
-		{input: "5", expected: 5},
-		{input: "10", expected: 10},
+		{"5", 5},
+		{"10", 10},
+		{"-5", -5},
+		{"-10", -10},
 	}
 
 	for _, tt := range tests {
@@ -29,6 +32,25 @@ func TestEvalBooleanExpression(t *testing.T) {
 	}{
 		{"true", true},
 		{"false", false},
+	}
+
+	for _, tt := range tests {
+		evaluated := testEval(tt.input)
+		testBooleanObject(t, evaluated, tt.expected)
+	}
+}
+
+func TestBangOperator(t *testing.T) {
+	tests := []struct {
+		input    string
+		expected bool
+	}{
+		{"!true", false},
+		{"!false", true},
+		{"!5", false},
+		{"!!true", true},
+		{"!!false", false},
+		{"!!5", true},
 	}
 
 	for _, tt := range tests {
