@@ -3,9 +3,9 @@ package evaluator
 import (
 	"testing"
 
-	"github.com/jsrhodes15/monkey-interpreter/lexer"
-	"github.com/jsrhodes15/monkey-interpreter/object"
-	"github.com/jsrhodes15/monkey-interpreter/parser"
+	"monkey-interpreter/lexer"
+	"monkey-interpreter/object"
+	"monkey-interpreter/parser"
 )
 
 func TestEvalIntegerExpression(t *testing.T) {

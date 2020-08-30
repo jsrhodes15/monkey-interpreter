@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/jsrhodes15/monkey-interpreter/ast"
+	"monkey-interpreter/ast"
 )
 
 type ObjectType string

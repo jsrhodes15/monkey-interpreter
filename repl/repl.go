@@ -4,12 +4,10 @@ import (
 	"bufio"
 	"fmt"
 	"io"
-
-	"github.com/jsrhodes15/monkey-interpreter/object"
-
-	"github.com/jsrhodes15/monkey-interpreter/evaluator"
-	"github.com/jsrhodes15/monkey-interpreter/lexer"
-	"github.com/jsrhodes15/monkey-interpreter/parser"
+	"monkey-interpreter/evaluator"
+	"monkey-interpreter/lexer"
+	"monkey-interpreter/object"
+	"monkey-interpreter/parser"
 )
 
 const PROMPT = ">> "

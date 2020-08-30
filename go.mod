@@ -1,3 +1,3 @@
-module github.com/jsrhodes15/monkey-interpreter
+module monkey-interpreter
 
 go 1.14

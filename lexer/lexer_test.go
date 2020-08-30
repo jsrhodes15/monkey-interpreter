@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/jsrhodes15/monkey-interpreter/token"
+	"monkey-interpreter/token"
 )
 
 func TestNextToken(t *testing.T) {
