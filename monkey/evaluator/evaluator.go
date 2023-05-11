@@ -3,8 +3,8 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/jsrhodes15/monkey-interpreter/ast"
-	"github.com/jsrhodes15/monkey-interpreter/object"
+	"monkey/ast"
+	"monkey/object"
 )
 
 var (

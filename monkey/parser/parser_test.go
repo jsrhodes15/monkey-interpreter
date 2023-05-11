@@ -2,8 +2,8 @@ package parser
 
 import (
 	"fmt"
-	"github.com/jsrhodes15/monkey-interpreter/ast"
-	"github.com/jsrhodes15/monkey-interpreter/lexer"
+	"monkey/ast"
+	"monkey/lexer"
 	"testing"
 )
 

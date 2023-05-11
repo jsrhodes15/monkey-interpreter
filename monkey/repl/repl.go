@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/jsrhodes15/monkey-interpreter/object"
+	"monkey/object"
 
-	"github.com/jsrhodes15/monkey-interpreter/evaluator"
-	"github.com/jsrhodes15/monkey-interpreter/lexer"
-	"github.com/jsrhodes15/monkey-interpreter/parser"
+	"monkey/evaluator"
+	"monkey/lexer"
+	"monkey/parser"
 )
 
 const PROMPT = ">> "
